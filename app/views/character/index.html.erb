@@ -1,0 +1,30 @@
+<% @characters.each do |c| %>
+	<div class="character">
+		<div class="character-name">
+			<h1><%= link_to c.name, character_path(c) %> <%= if not c.active then link_to c.active, "Select", c, method: :put end %></h1>
+		</div>
+		<div class="character-level">
+			Level <%= c.level %>
+		</div>
+		<div class="character-class">
+			<%= c.order.name %>
+		</div>
+		<div class="character-stats">
+			<table border="0">
+				<tr>
+					<td class="stat">Agility</td>
+					<td class="stat-value"><%= c.agility %></td>
+					<td class="stat">Intellect</td>
+					<td class="stat-value"><%= c.intellect %></td>
+				</tr>
+				<tr>
+					<td class="stat">Strength</td>
+					<td class="stat-value"><%= c.strength %></td>
+					<td class="stat">Health</td>
+					<td class="stat-value"><%= c.health %> (<%= c.stamina %> Stamina)</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+<% end %>

@@ -1,0 +1,58 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width">
+  <%= csrf_meta_tags %>
+  <title>a game... thing.</title>
+
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+
+</head>
+<body>
+
+  <div id="wrap">
+    <div id="header">
+      <h1>TextRPG</h1>
+      <h2>Images are for pussies.</h2>
+      <div id="user">
+        Welcome back Ben!
+      </div>
+    </div>
+    
+    <div id="navigation">
+    <% if not user_signed_in? then %>
+      <ul>
+        <%= link_to '<li>Home</li>'.html_safe, :home %>
+        <%= link_to '<li>What</li>'.html_safe, :home_what %>
+        <%= link_to '<li>Register</li>'.html_safe, :new_user_registration %>
+      </ul>
+    <% else %>
+      <ul>
+        <%= link_to '<li>Characters</li>'.html_safe, :character_index %>
+        <a href="#"><li>Account</li></a>
+      </ul>
+    <% end %>
+    </div>
+    
+    <div id="content">
+    
+      <% if notice then %><p class="notice"><%= notice %></p><% end %>
+      <% if alert then %><p class="alert"><%= alert %></p><% end %>
+    
+      <%= yield %>
+      
+    </div>
+    
+    <div id="footer">
+      
+    </div>
+  </div>
+
+</body>

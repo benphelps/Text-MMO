@@ -1,0 +1,178 @@
+/* ==|== primary styles =====================================================
+   Author: Ben Phelps
+   ========================================================================== */
+
+body {
+   font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+   color: #141414;
+   font-size: 14px;
+}
+
+#wrap {
+   width: 1000px;
+   margin: 30px auto 0px auto;
+}
+
+#header {
+   color: #444;
+}
+
+#header h1 {
+   font-size: 28px;
+   margin: 0;
+   padding: 0;
+}
+
+#header h2 {
+   display: inline;
+   font-size: 14px;
+   margin: 0;
+   padding: 0;
+}
+
+#user {
+   float: right;
+   display: inline;
+}
+
+#navigation {
+   margin-top: 20px;
+   float: left;
+   width: 150px;
+}
+
+#navigation ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+#navigation li {
+   height: 20px;
+   margin-bottom: 4px;
+   padding: 3px 0px 0px 3px;
+}
+
+#navigation li:hover {
+   background: #efefef;
+}
+
+#content {
+   margin-top: 20px;
+   float: right;
+   width: 840px;
+}
+
+#content h1 {
+   font-size: 16px;
+   padding: 8px 0px 0px 8px;
+   margin: 0;
+}
+
+#content p {
+   padding: 4px 0px 4px 8px;
+   margin: 0;
+}
+
+.character {
+   background-color: #efefef;
+   height: 55px;
+   width: 418px;
+   display: inline-block;
+   margin-bottom: 4px;
+}
+
+.character-level {
+   font-size: 11px;
+   padding-left: 8px;
+   display: inline-block;
+}
+
+.character-class {
+   font-size: 11px;
+   display: inline-block;
+}
+
+.character-stats {
+   width: 230px;
+   left: 150px;
+   position: relative;
+   top: -36px;
+}
+
+.character-stats table {
+   margin: 0;
+   padding: 0;
+   font-size: 11px;
+   width: 220px;
+}
+
+.character-stats table tr td {
+   margin: 0;
+   padding: 0;
+   font-size: 11px;
+   padding-left: 5px;
+}
+
+.character-stats .stat {
+   font-weight: bold;
+   padding-bottom: 1px;
+}
+
+.character-stats .stat:after {
+   content: ':';
+}
+
+.character-stats .stat-value {
+   padding: 1px;
+   margin: 0;
+}
+
+.character-detail .name {
+   background-color: #efefef;
+}
+
+.character-detail .name h1 {
+   margin: 0;
+   padding: 0px 0px 0px 8px !important;
+   font-size: 24px !important;
+}
+
+.armor-item {
+   background-color: #efefef;
+   height: 55px;
+   width: 418px;
+   display: inline-block;
+   margin-bottom: 4px;
+   font-size: 14px;
+}
+
+.stat-bonus {
+   font-size: 11px;
+   margin: 0px 0px 0px 8px;
+}
+
+.stat-level {
+   position: relative;
+   float: right;
+   text-align: left;
+   top: -15px;
+   left: -5px;
+   font-size: 11px;
+   font-weight: bold;
+}
+
+a {
+   color: #444;
+   text-decoration: none;
+}
+
+a:hover {
+   color: #444;
+   text-decoration: none;
+}
+
+a:visited {
+   color: #444;
+   text-decoration: none;
+}

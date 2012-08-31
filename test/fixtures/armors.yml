@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  character_id: MyString
+  head_id: MyString
+  shoulder_id: MyString
+  chest_id: MyString
+  back_id: MyString
+  waist_id: MyString
+  legs_id: MyString
+  feet_id: MyString
+  hand_id: MyString
+
+two:
+  character_id: MyString
+  head_id: MyString
+  shoulder_id: MyString
+  chest_id: MyString
+  back_id: MyString
+  waist_id: MyString
+  legs_id: MyString
+  feet_id: MyString
+  hand_id: MyString

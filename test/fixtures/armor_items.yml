@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  armor_tier_id: MyString
+  enchant_id: MyString
+  bonus_id: MyString
+
+two:
+  armor_tier_id: MyString
+  enchant_id: MyString
+  bonus_id: MyString

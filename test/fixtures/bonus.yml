@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  strength: MyString
+  agility: MyString
+  stamina: MyString
+  intellect: MyString
+  name: MyString
+
+two:
+  strength: MyString
+  agility: MyString
+  stamina: MyString
+  intellect: MyString
+  name: MyString

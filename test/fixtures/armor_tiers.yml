@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  level: 1
+  agility: 1
+  strength: 1
+  stamina: 1
+  intellect: 1
+  deviation: 1
+
+two:
+  name: MyString
+  level: 1
+  agility: 1
+  strength: 1
+  stamina: 1
+  intellect: 1
+  deviation: 1
