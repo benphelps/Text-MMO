@@ -10,7 +10,8 @@ class CharacterController < ApplicationController
 	end
 	
 	def create
-	
+    @order = Order.find(params[:order])
+	  @character = Character.new(:name => params[:name], :order => @order)
 	end
 	
 	def update
