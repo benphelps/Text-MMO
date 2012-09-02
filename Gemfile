@@ -7,10 +7,7 @@ gem 'rails', '3.2.7'
 
 gem 'sqlite3'
 gem 'devise'
-gem 'railroad'
-gem 'dot'
-gem 'rails_admin'
-gem 'newrelic_rpm'
+gem 'awesome_print'
 
 # Gems used only for assets and not required
 # in production environments by default.
