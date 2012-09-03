@@ -3,6 +3,6 @@ An opensource text mmo platform written in Ruby on Rails.
 
 == Setup
     bundle install
-    rake db:create
+    rake db:schema:load
 
 Everything should work. Have fun!
