@@ -22,7 +22,11 @@
       <h1>TextRPG</h1>
       <h2>Images are for pussies.</h2>
       <div id="user">
-        Welcome back Ben!
+        <% if not user_signed_in? then %>
+          <%= link_to 'Click Here To Login', new_user_session_path %>
+        <% else %>
+          Welcome back <strong><%= current_user.username %></strong>
+        <% end %>
       </div>
     </div>
     
