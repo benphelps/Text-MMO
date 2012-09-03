@@ -14,3 +14,4 @@
 //= require plugins
 //= require jquery
 //= require jquery_ujs
+//= require libs/jquery.formalize.min.js
