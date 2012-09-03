@@ -1,6 +1,10 @@
 == Text MMO
 An opensource text mmo platform written in Ruby on Rails.
 
+== Pics or it doesn't work
+
+You can find a probably working developemnt instance here: http://tmo-dev.herokuapp.com/
+
 == Setup
     bundle install
     rake db:schema:load
