@@ -3,7 +3,7 @@ An opensource text mmo platform written in Ruby on Rails.
 
 == Pics or it doesn't work
 
-** This doesn't really do much yet, don't tell me what doesn't work **
+<b>This doesn't really do much yet, don't tell me what doesn't work</b>
 
 You can find a probably working developemnt instance here: http://tmo-dev.herokuapp.com/
 
