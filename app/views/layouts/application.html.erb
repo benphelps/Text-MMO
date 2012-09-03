@@ -10,15 +10,11 @@
   <meta name="viewport" content="width=device-width">
   <%= csrf_meta_tags %>
   <title>a game... thing.</title>
-
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
-
 </head>
 <body>
-
   <div id="wrap">
-  
     <div id="header">
       <h1>TextRPG</h1>
       <h2>Images are for pussies.</h2>
@@ -30,9 +26,7 @@
         <% end %>
       </div>
     </div>
-    
     <div class="clearfix"></div>
-    
     <div id="navigation">
     <% if not user_signed_in? then %>
       <ul>
@@ -47,21 +41,14 @@
       </ul>
     <% end %>
     </div>
-    
     <div id="content">
       <% if notice then %><p class="notice"><%= notice %></p><% end %>
       <% if alert then %><p class="alert"><%= alert %></p><% end %>
       <%= yield %>
     </div>
-    
     <div class="clearfix"></div>
-    
     <div id="footer">
       &copy; 2012 benphelps.me
     </div>
-    
   </div>
-
-  
-  
 </body>
