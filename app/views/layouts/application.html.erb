@@ -18,6 +18,7 @@
 <body>
 
   <div id="wrap">
+  
     <div id="header">
       <h1>TextRPG</h1>
       <h2>Images are for pussies.</h2>
@@ -29,6 +30,8 @@
         <% end %>
       </div>
     </div>
+    
+    <div class="clearfix"></div>
     
     <div id="navigation">
     <% if not user_signed_in? then %>
@@ -46,17 +49,19 @@
     </div>
     
     <div id="content">
-    
       <% if notice then %><p class="notice"><%= notice %></p><% end %>
       <% if alert then %><p class="alert"><%= alert %></p><% end %>
-    
       <%= yield %>
-      
     </div>
+    
+    <div class="clearfix"></div>
     
     <div id="footer">
-      
+      &copy; 2012 benphelps.me
     </div>
+    
   </div>
 
+  
+  
 </body>
