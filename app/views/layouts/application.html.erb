@@ -19,9 +19,7 @@
       <h1>TextRPG</h1>
       <h2>Images are for pussies.</h2>
       <div id="user">
-        <% if not user_signed_in? then %>
-          <%= link_to 'Click Here To Login', new_user_session_path %>
-        <% else %>
+        <% if user_signed_in? then %>
           Welcome back <strong><%= current_user.username %></strong>
         <% end %>
       </div>
@@ -31,13 +29,13 @@
     <% if not user_signed_in? then %>
       <ul>
         <%= link_to '<li>Home</li>'.html_safe, :home %>
-        <%= link_to '<li>What</li>'.html_safe, :home_what %>
+        <%= link_to '<li>Login</li>'.html_safe, :new_user_session %>
         <%= link_to '<li>Register</li>'.html_safe, :new_user_registration %>
       </ul>
     <% else %>
       <ul>
         <%= link_to '<li>Characters</li>'.html_safe, :character_index %>
-        <a href="#"><li>Account</li></a>
+        <%= link_to '<li>Logout</li>'.html_safe, :destroy_user_session, :method => :delete %>
       </ul>
     <% end %>
     </div>
