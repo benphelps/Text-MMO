@@ -5,5 +5,6 @@ TextMMMO::Application.routes.draw do
   match '/home/what' => 'home#what'
   resources :characters
   resources :armors
+  resource :studio
   root :to => 'home#index'
 end
