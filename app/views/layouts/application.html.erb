@@ -34,6 +34,9 @@
       </ul>
     <% else %>
       <ul>
+        <% if current_user.admin? then %>
+          <%= link_to '<li>Studio</li>'.html_safe, :studio %>
+        <% end %>
         <%= link_to '<li>Characters</li>'.html_safe, :characters %>
         <%= link_to '<li>Logout</li>'.html_safe, :destroy_user_session, :method => :delete %>
       </ul>
