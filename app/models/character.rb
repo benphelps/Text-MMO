@@ -1,5 +1,5 @@
 class Character < ActiveRecord::Base
-  attr_accessible :level, :name
+  attr_accessible :order, :name
   belongs_to :order
   belongs_to :user
   has_one :armor
