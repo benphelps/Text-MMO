@@ -34,7 +34,7 @@
       </ul>
     <% else %>
       <ul>
-        <%= link_to '<li>Characters</li>'.html_safe, :character_index %>
+        <%= link_to '<li>Characters</li>'.html_safe, :characters %>
         <%= link_to '<li>Logout</li>'.html_safe, :destroy_user_session, :method => :delete %>
       </ul>
     <% end %>
