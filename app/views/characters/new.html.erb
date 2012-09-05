@@ -1,0 +1,9 @@
+<%= form_for @character, :method => :post do |f| %>
+  <div><%= f.label :name %>
+  <%= f.text_field :name %></div>
+
+  <div><%= f.label :order %>
+  <%= f.collection_select(:order, @orders, :id, :name ) %></div>
+
+  <div><%= f.submit "Create Character" %></div>
+<% end %>

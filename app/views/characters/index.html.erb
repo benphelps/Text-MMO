@@ -1,7 +1,8 @@
+<%= link_to 'New Character', new_character_path %>
 <% @characters.each do |c| %>
 	<div class="character">
 		<div class="character-name">
-			<h1><%= link_to c.name, character_path(c) %> <%= if not c.active then link_to c.active, "Select", c, method: :put end %></h1>
+			<h1><%= link_to c.name, c %></h1>
 		</div>
 		<div class="character-level">
 			Level <%= c.level %>

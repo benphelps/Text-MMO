@@ -1,5 +1,6 @@
-class CharacterController < ApplicationController
-
+class CharactersController < ApplicationController
+	before_filter :authenticate_user!
+	
 	def index
 		@characters =  current_user.characters.find(:all)
 	end
@@ -10,8 +11,15 @@ class CharacterController < ApplicationController
 	end
 	
 	def create
-    @order = Order.find(params[:order])
-	  @character = Character.new(:name => params[:name], :order => @order)
+    @order = Order.find(params[:character][:order])
+	  @character = Character.new(:name => params[:character][:name], :order => @order)
+	  current_user.characters << @character
+	  redirect_to characters_path
+	end
+	
+	def new
+		@character = Character.new
+		@orders = Order.all
 	end
 	
 	def update
@@ -19,7 +27,7 @@ class CharacterController < ApplicationController
 		character = current_user.characters.find(params[:id])
 		character.active = true
 		character.save
-		redirect_to character_index_path
+		redirect_to character
 	end
 	
 	def edit
