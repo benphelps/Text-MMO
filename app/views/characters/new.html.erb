@@ -3,7 +3,7 @@
   <%= f.text_field :name %></div>
 
   <div><%= f.label :order %>
-  <%= f.collection_select(:order, @orders, :id, :name ) %></div>
+  <%= f.collection_select(:order_id, @orders, :id, :name ) %></div>
 
   <div><%= f.submit "Create Character" %></div>
 <% end %>

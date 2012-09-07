@@ -11,8 +11,7 @@ class CharactersController < ApplicationController
 	end
 	
 	def create
-    @order = Order.find(params[:character][:order])
-	  @character = Character.new(:name => params[:character][:name], :order => @order)
+	  @character = Character.new(params[:character])
 	  current_user.characters << @character
 	  redirect_to characters_path
 	end
