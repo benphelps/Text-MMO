@@ -7,7 +7,6 @@ class CharactersController < ApplicationController
 	
 	def show
 		@character =  current_user.characters.find(params[:id])
-		@armor = @character.armor.items
 	end
 	
 	def create

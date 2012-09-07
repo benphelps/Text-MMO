@@ -1,5 +1,5 @@
 <div class="armor">
-	<% @armor.each do |a| if a != nil then %>
+	<% @character.armor.items.each do |a| if a != nil then %>
   <div class="armor-item">
 			<h1><%= a.name %> <%= a.armor_tier.name %></h1>
 			<span class="stat-bonus"><%= a.stat.agility %> Agility</span>
