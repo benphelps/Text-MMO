@@ -15,3 +15,5 @@
 /tmp
 
 *.pid
+
+.DS_Store
